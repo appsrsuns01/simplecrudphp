@@ -1,0 +1,19 @@
+table.dataTable td.sorting_1 { 
+  background-color: white; 
+  border:1px lightgrey; 
+}
+
+table.dataTable td { 
+  background-color: white;  
+  border:1px lightgrey;
+}
+
+table.dataTable tr.odd td { 
+  background-color: white;  
+  border:1px lightgrey;
+}
+
+table.dataTable tr.even td { 
+  background-color: #e8efef; 
+  border:1px lightgrey; 
+}

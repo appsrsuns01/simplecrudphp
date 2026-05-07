@@ -1,0 +1,184 @@
+
+	.login-box {
+		margin: 5% auto;
+	}
+	.login-page, .logo, .navbar {
+		background: #232C6D !important;
+	}
+
+	.login-logo {
+		font-size: 30px;
+		margin-bottom: 20px;
+		color: white;
+	}
+
+	.login-box-body {
+		padding: 10px 20px 20px 20px !important;
+	}
+
+	.login-box-body h3 {
+		font-weight: bold;
+	}
+
+	.login-box-body img {
+		display: block;
+		margin: 15px auto;
+	}
+
+
+  /* DataTables */
+  div.dt-top-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  
+  div.dt-center-in-div {
+    margin: 0 auto;
+  }
+  
+  div.dt-filter-spacer {
+    margin: 10px 0;
+  }
+
+  /* selector ke div yg tidak diberikan identifikasi */
+  /* jadi diakalai dgn 'parent selector' */
+  div:has(>.dt-info) {
+  /* .dt-filter-spacer+div { */
+    display : flex;
+    flex-direction : row;
+    flex-wrap : wrap;
+    justify-content : space-between;
+  }
+
+  .dt-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .btn-export01 {
+    background: green !important;
+    border: none !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    padding: 2px 5px !important;
+  }
+  
+  .btn-tables-info {
+    color: #fff !important;
+    background-color: #17a2b8 !important;
+    border-color: #17a2b8 !important;
+
+    display: inline-block !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+    margin: .375rem  !important;
+
+    user-select: none  !important;
+    border: 1px solid transparent  !important;
+    padding: .375rem .75rem  !important;
+    font-size: 1rem  !important;
+    line-height: 1.5  !important;
+    border-radius: .25rem  !important;
+    transition: color .15sease-in-out, background-color .15sease-in-out, border-color .15sease-in-out, box-shadow .15sease-in-out  !important;
+  }
+
+
+  /* custom text for title  */
+  .title-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    /* background: #4FC3F7; */
+    background: #6a7073;
+    animation: cursorBlink 0.8s steps(3) infinite;
+  }
+
+  @keyframes cursorBlink {
+
+    0%,
+    75% {
+      opacity: 1;
+    }
+
+    76%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin : 2rem;
+  }
+  
+  .title-text {
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
+    margin-bottom: 2rem;
+    /* background: #121215; */
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .title-text h2 {
+    position: relative;
+    /* color: #4FC3F7; */
+    color: #6a7073;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    /* animation: type 5s steps(11) infinite; */
+    animation: type 5s steps(11) infinite;
+  }
+
+  @keyframes type {
+
+    0%,
+    100% {
+      width: 0px;
+    }
+
+    30%,
+    60% {
+      /* width: 394.09px; */
+      width: 374.09px;
+    }
+
+
+    
+  }
+
+  @media(max-width: 567px) {
+    .title-text h2 {
+      font-size: 1.5rem;
+      animation: type 5s steps(10) infinite;
+    }
+
+    @keyframes type {
+
+      0%,
+      100% {
+          width: 0px;
+      }
+
+      30%,
+      60% {
+        width: 305px;
+      }
+    }
+  }
+
+  
+

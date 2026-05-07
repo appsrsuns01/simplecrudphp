@@ -1,0 +1,112 @@
+/* tambahan BIMON utk animasi spinner selama menunggu request ajax */
+.show_spinner {
+  position:fixed;top:0;right:0;bottom:0;left:0;
+  background: rgba(0,0,0,0.5) url(./dist/img/spinner.gif) no-repeat 50% 50%;
+  z-index:100;
+  background-size: 5ex;
+}
+
+.hidden{
+  display:none;
+}
+/* END OF tambahan BIMON */
+
+/* COMOT CODEPEN.IO */
+.fadeout {
+  padding: 20px;
+  font-size: 20px;
+  position: absolute;
+  margin: 20px 0 0 20px;
+}
+
+.loading-animation {
+  width: 100%;
+  height: 100%;
+  background-color: #1F1716;
+  color: #F4D58D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-animation__hide {
+  -webkit-transition: visibility 0s 0.5s, opacity 0.5s linear;
+  -moz-transition: visibility 0s 0.5s, opacity 0.5s linear;
+  -ms-transition: visibility 0s 0.5s, opacity 0.5s linear;
+  -o-transition: visibility 0s 0.5s, opacity 0.5s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-animation--container {
+  /* position: relative; */
+  position:fixed;top:0;right:0;bottom:0;left:0;
+  background: rgba(8, 7, 7, 0.5) no-repeat 50% 50%;
+  /* z-index:1039; */
+  z-index:9999;
+  background-size: 5ex;
+}
+
+.loading-animation--spinner {
+  position: fixed;
+  height: 150px;
+  width: 150px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.loading-animation--spinner__inner {
+  height: 150px;
+  width: 150px;
+  display: block;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top-color: #F4D58D;
+  border-bottom-color: #F4D58D;
+  -webkit-animation: rotate 3s linear infinite;
+  -moz-animation: rotate 3s linear infinite;
+  -ms-animation: rotate 3s linear infinite;
+  -o-animation: rotate 3s linear infinite;
+  animation: rotate 3s linear infinite;
+  box-sizing: border-box;
+}
+
+.loading-animation--logo {
+  z-index: 2;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.loading-animation--logo img {
+  /* position: relative; */
+  border-radius: 50%;
+  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@keyframes rotate {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
