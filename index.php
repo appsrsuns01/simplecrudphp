@@ -19,12 +19,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Aplikasi Dashboard Presensi DPJP">
+    <meta name="description" content="Aplikasi Simple PHP Native">
     <meta name="author" content="Unknown">
 
     <!-- <meta http-equiv="refresh" content="120;"> -->
 
-    <title>Dashboard Presensi DPJP</title>
+    <title>Simple PHP Native</title>
 
     <!-- ICON -->
     <link rel="icon" type="image/png" href="./public/images/small-logo-2.png">
@@ -83,7 +83,7 @@
             <!-- Page Heading -->
             <div class="container-title">
               <div class="title-text">
-                <center><h2 class="text-uppercase">Presensi DPJP</h2></center>
+                <center><h2 class="text-uppercase">Daftar Unit RS UNS</h2></center>
               </div>
             </div>
 
