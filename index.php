@@ -83,7 +83,7 @@
             <!-- Page Heading -->
             <div class="container-title">
               <div class="title-text">
-                <center><h2 class="text-uppercase">Daftar Unit RS UNS</h2></center>
+                <center><h2 class="text-uppercase">Unit RS UNS</h2></center>
               </div>
             </div>
 
